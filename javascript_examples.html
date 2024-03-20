@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript examples</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Division for header elements -->
+    <div class="header">
+        <nav>
+            <div class="heading">
+                <h1>
+                    Welcome
+                </h1>
+            </div>
+            <div class="nav-items">
+                <ul>
+                    <li>
+                        Item 1
+                    </li>
+                    <li>
+                        Item 2
+                    </li>
+                    <li>
+                        Item 3
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <hr>
+    <!-- Division for main content of page -->
+    <div class = "main-content">
+        <article>
+            <h2>
+                <b>D</b>ocument <b>O</b>bject <b>M</b>odel
+            </h2>
+            <article>
+                When your HTML webpage is loaded, the browser builds a tree of Objects in the entire HTML document.
+                <br>
+                This model is accessed by Javascript to access, change or remove certain parts of the HTML and CSS of your webpage,
+                as well as to respond to certain <b>`DOM`</b> events.
+            </article>
+        <hr>
+            <h2>Javascript Outputs</h2>
+            There are different output possibilities in Javascript... 
+            <ul>
+                <li>
+                    HTML output 
+                    <p>using document.write("insert hypertext.....")</p>
+                </li>
+                <li>
+                    InnerHTML
+                    <p>Writing into an HTML element using document.getElementById(id_of_element) and using the innerHTML property.
+                        <br>
+                        Example: document.getElementById(id).<b>innerHTML</b> = 10; will insert the value '10' into the HTML element of that id
+                    </p>
+                </li>
+                <li>
+                    Alert Box 
+                    <p>Used for sending alerts to the user.
+                        <br>
+                        window.alert("text") or alert("text")
+                        <br>
+                        the window keyword is optional, it refers to the window object rather than the document.
+                    </p>
+                </li>
+                <li>
+                    Debugging output into console
+                    <p>
+                        We can print into the browser console using console.log("text") for debugging purposes like tracking variable values.
+                    </p>
+                </li>
+            </ul>
+        </article>
+
+        <div>
+            <p id = "change_para" style="background-color: antiquewhite;">This paragraph is going to be changed as soon as you click the next button</p>
+            <!-- Changing HTML content of an element by using innerHTML property -->
+            <button type="button" onclick="document.getElementById('change_para').innerHTML = 'This is the new para'">Change the above para by clicking here</button>
+            <!-- Making changes to attributes of an element by accessing it through getElementById.<attribute> -->
+                <!-- Here we are making changes to the style attribute -->
+            <button type="button" onclick="document.getElementById('change_para').style='background-color: lightblue;'">Change the para's bg color by clicking here</button>
+
+            <!-- Sending alerts to the window -->
+            <button type="button" onclick="window.alert('Here is an alert for you !!!')">Click here to see an alert in the window object</button>
+
+            <!-- Sending outputs to the console -->
+            <!-- This is used for debugging purposes -->
+
+            <button type="button" onclick="console.log('Yohoo!!! Here is an output on your console !!!')">Click here for Console output</button>
+        </div>
+
+
+    </div>
+<!-- <script>document.getElementById("change_para").innerHTML = 10</script> -->
+</body>
+</html>

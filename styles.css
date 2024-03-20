@@ -1,0 +1,44 @@
+.header {
+    
+    position: fixed;
+
+    .heading {
+        float: left;
+    }
+    li {
+        display: inline;
+    }
+
+    .nav-items {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+        float: right;
+    }
+
+}
+
+.main-content {
+    padding: 50px;
+    position: relative;
+    /* padding-top : 100px; */
+}
+
+.container {
+    display: flex;
+}
+.boxes {
+    
+    border: 1px dashed;
+    margin: 5px;
+    padding: 5px;
+    box-shadow: 2px 2px blue;
+    
+}
+.image {
+    padding: 5px;
+
+    img{
+    width: 100%;
+    }
+}
