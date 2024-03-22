@@ -6,4 +6,6 @@
 
 This code can be copied and used but **cannot be re-used in any other tutorials.**
 
+[Click here to go to the Javascript tutorials ...](https://ananthakrishnanpta.github.io/Web-tutorials/javascript_examples.html)
+
 &copy; 2024
