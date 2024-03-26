@@ -46,3 +46,31 @@ document.write("<br>")
 document.write(square_var_2(2,4));
 
 
+// Armstrong number : 
+
+function isArmstrong() {
+    let x = prompt("Please enter a number");
+    // x is the number to be checked
+    let n = x.toString(); // converting x to a string 'x' to utilize string functions
+    let digits = n.length; // utilizing the string property called 'length' to measure no. of digits
+    // console.log(digits);
+    result = 0;
+    for(let i = 0; i < digits; i++){ //  looping through each digit of the number
+        result = result + (parseInt(n[i])**digits) 
+        // n[i] will give each digit of the number stored in string datatype 
+        // parseInt parses the single digit to Integer format
+        // the parsed integer is raised to the power of number of digits of the number
+    }
+    if (result == x) // summed result is compared with the actual number
+    {
+        window.alert("This is an armstrong number...");
+    }
+    else {
+        window.alert("This is not an armstrong number...")
+    }
+}
+// isArmstrong();
+
+document.getElementById("id_for_switch_class").className = "classB";
+
+

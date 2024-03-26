@@ -42,3 +42,13 @@
     width: 100%;
     }
 }
+
+.classA {
+    color:blue;
+    text-align: left;
+}
+
+.classB {
+    color: red;
+    text-align: right;
+}
